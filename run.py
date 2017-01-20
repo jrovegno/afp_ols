@@ -38,6 +38,7 @@ data_afp = pd.Panel(data)
 # Crea DataFrame de trabajo
 df = data_index.copy()
 df['CUPRUM_A'] = data_afp.CUPRUM.A
+df['CUPRUM_E'] = data_afp.CUPRUM.E
 df.dropna(inplace=True)
 # Rentabilidad diaria
 df_pct = df.pct_change()
